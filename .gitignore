@@ -1,0 +1,33 @@
+# Build files
+*.zip
+output/
+build/
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Android build files
+*.apk
+*.aab
+build/
+.gradle/
+
+# Log files
+*.log
+logs/
+
+# Backup files
+*.backup
+*.old

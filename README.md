@@ -26,8 +26,9 @@ Modul Magisk untuk memblokir iklan dari aplikasi YouTube dan YouTube Music, miri
 3. **Backup**: Backup data penting sebelum instalasi
 
 ### Langkah 2: Download Modul
-- Download file ZIP release terbaru dari repository ini
-- Atau build dari source (lihat bagian Building)
+- Download file ZIP langsung dari repository ini
+- File: `youtube_adblock_magisk_module_v1.0.0.zip` (11 KB)
+- **Status**: ✅ Siap install langsung
 
 ### Langkah 3: Install via Magisk Manager
 1. Buka Magisk Manager
@@ -170,26 +171,19 @@ Modul memblokir berbagai domain terkait iklan termasuk:
 3. Coba install ulang Magisk Manager
 4. Pastikan perangkat mendukung Magisk
 
-## Building dari Source
+## Download Modul
 
-### Persiapan
-1. Clone repository ini
-2. Install Android SDK dan build tools
-3. Pastikan Java Development Kit (JDK) terinstall
+### File Siap Pakai
+Modul sudah siap download dan install langsung tanpa perlu build:
 
-### Proses Build
-1. Buka terminal di direktori proyek
-2. Jalankan script build:
-   ```bash
-   ./build.sh
-   ```
-3. File ZIP modul akan dibuat di direktori `output/`
+- **File**: `youtube_adblock_magisk_module_v1.0.0.zip`
+- **Ukuran**: ~11 KB
+- **Status**: Siap install
 
-### Struktur File Build
-```
-output/
-└── youtube_adblock_magisk_module.zip
-```
+### Cara Download
+1. Download file `youtube_adblock_magisk_module_v1.0.0.zip` langsung dari repository ini
+2. Install langsung via Magisk Manager
+3. Tidak perlu build atau compile
 
 ## Kontribusi
 
@@ -233,6 +227,10 @@ Kontribusi sangat diterima! Silakan submit pull requests atau buka issues untuk:
 Proyek ini dilisensikan di bawah MIT License - lihat file LICENSE untuk detail.
 
 ## Kredit dan Ucapan Terima Kasih
+
+### Developer
+- **Author**: MasVentot
+- **Maintainer**: MasVentot
 
 ### Inspirasi
 - YouTube ReVanced project
@@ -307,8 +305,22 @@ Proyek ini dilisensikan di bawah MIT License - lihat file LICENSE untuk detail.
 2. Reset properti sistem
 3. Bersihkan cache aplikasi
 
+## 📁 File Repository
+
+### 📦 File Siap Download
+- `youtube_adblock_magisk_module_v1.0.0.zip` - Modul Magisk siap install
+- `youtube_adblock_magisk_module_v1.0.0.md` - Release notes
+
+### 📋 File Source Code
+- `module.prop` - Metadata modul
+- `system.prop` - Properti sistem
+- `hosts` - Daftar domain iklan
+- `XposedHook.java` - Class hook utama
+- `AndroidManifest.xml` - Manifest aplikasi
+- Dan file-file pendukung lainnya
+
 ---
 
 **Selamat menikmati YouTube tanpa iklan! 🎉**
 
-*Dibuat dengan ❤️ untuk komunitas Android Indonesia*
+*Dibuat dengan ❤️ oleh MasVentot untuk komunitas Android Indonesia*
