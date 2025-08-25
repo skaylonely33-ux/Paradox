@@ -1,0 +1,72 @@
+#!/sbin/sh
+TMPDIR=/dev/tmp
+MOUNTPATH=/dev/magisk_img
+
+# Default permissions
+umask 022
+
+# Initial cleanup
+rm -rf $TMPDIR 2>/dev/null
+mkdir -p $TMPDIR
+
+# echo before loading util_functions
+ui_print() { echo "$1"; }
+
+require_new_magisk() {
+  ui_print "*******************************"
+  ui_print " Please install Magisk v20.0+! "
+  ui_print "*******************************"
+  exit 1
+}
+
+OUTFD=$2
+ZIP=$3
+
+mount /data 2>/dev/null
+
+[ -f /data/adb/magisk/util_functions.sh ] || require_new_magisk
+. /data/adb/magisk/util_functions.sh
+[ $MAGISK_VER_CODE -lt 20000 ] && require_new_magisk
+
+install_module() {
+  rm -rf $MODPATH 2>/dev/null
+  mkdir -p $MODPATH
+
+  ui_print "- Extracting module files"
+  unzip -o "$ZIP" -x 'META-INF/*' -d $MODPATH >&2
+
+  # Set permissions
+  set_perm_recursive $MODPATH 0 0 0755 0644
+  set_perm $MODPATH/system/bin/youtube_adblock 0 0 0755
+  set_perm $MODPATH/system/etc/init.d/99youtube_adblock 0 0 0755
+
+  # Create necessary directories
+  mkdir -p $MODPATH/system/etc/permissions
+  mkdir -p $MODPATH/system/framework
+  mkdir -p $MODPATH/system/lib64
+  mkdir -p $MODPATH/system/app/YouTubeAdBlock
+
+  ui_print "- Setting up Xposed framework"
+  # Copy Xposed framework files
+  cp -r $MODPATH/xposed/* $MODPATH/system/ 2>/dev/null
+
+  ui_print "- Installing ad blocking rules"
+  # Copy hosts file for additional ad blocking
+  cp $MODPATH/hosts $MODPATH/system/etc/hosts.youtube_adblock
+
+  ui_print "- Module installed successfully!"
+  ui_print "- Please reboot your device"
+  ui_print "- Enable the module in Magisk Manager"
+}
+
+# Check if Magisk is installed
+if [ ! -f /data/adb/magisk/util_functions.sh ]; then
+  ui_print "! Magisk not found"
+  ui_print "! Please install Magisk first"
+  exit 1
+fi
+
+# Install the module
+install_module
+
+exit 0

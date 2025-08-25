@@ -1,0 +1,7 @@
+id=youtube_adblock
+name=YouTube & YouTube Music AdBlock
+version=v1.0.0
+versionCode=1
+author=Your Name
+description=Block ads from YouTube and YouTube Music apps using Xposed framework and custom patches. Similar to YouTube ReVanced functionality.
+minMagisk=24000

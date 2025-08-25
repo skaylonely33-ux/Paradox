@@ -1,0 +1,23 @@
+# YouTube AdBlock Module Properties
+
+# Enable Xposed framework
+ro.xposed.active=true
+
+# Disable YouTube ads
+youtube.adblock.enabled=true
+
+# Disable YouTube Music ads
+youtube.music.adblock.enabled=true
+
+# Force disable ad tracking
+persist.adblock.enabled=true
+
+# Disable analytics and telemetry
+ro.analytics.enabled=false
+ro.telemetry.enabled=false
+
+# Network ad blocking
+net.adblock.enabled=true
+
+# DNS ad blocking
+dns.adblock.enabled=true
