@@ -1,0 +1,122 @@
+# YouTube & YouTube Music AdBlock Hosts File
+# This file blocks ad servers and tracking domains
+
+# YouTube Ad Domains
+127.0.0.1 ads.youtube.com
+127.0.0.1 ads-api.tiktok.com
+127.0.0.1 ads.tiktok.com
+127.0.0.1 ads-sdk.tiktok.com
+127.0.0.1 ads-sdk-u.tiktok.com
+127.0.0.1 ads-sdk-d.tiktok.com
+127.0.0.1 ads-sdk-e.tiktok.com
+127.0.0.1 ads-sdk-f.tiktok.com
+127.0.0.1 ads-sdk-g.tiktok.com
+127.0.0.1 ads-sdk-h.tiktok.com
+127.0.0.1 ads-sdk-i.tiktok.com
+127.0.0.1 ads-sdk-j.tiktok.com
+127.0.0.1 ads-sdk-k.tiktok.com
+127.0.0.1 ads-sdk-l.tiktok.com
+127.0.0.1 ads-sdk-m.tiktok.com
+127.0.0.1 ads-sdk-n.tiktok.com
+127.0.0.1 ads-sdk-o.tiktok.com
+127.0.0.1 ads-sdk-p.tiktok.com
+127.0.0.1 ads-sdk-q.tiktok.com
+127.0.0.1 ads-sdk-r.tiktok.com
+127.0.0.1 ads-sdk-s.tiktok.com
+127.0.0.1 ads-sdk-t.tiktok.com
+127.0.0.1 ads-sdk-u.tiktok.com
+127.0.0.1 ads-sdk-v.tiktok.com
+127.0.0.1 ads-sdk-w.tiktok.com
+127.0.0.1 ads-sdk-x.tiktok.com
+127.0.0.1 ads-sdk-y.tiktok.com
+127.0.0.1 ads-sdk-z.tiktok.com
+
+# Google Ad Services
+127.0.0.1 doubleclick.net
+127.0.0.1 googlesyndication.com
+127.0.0.1 googleadservices.com
+127.0.0.1 pagead2.googlesyndication.com
+127.0.0.1 adservice.google.com
+127.0.0.1 ads.google.com
+127.0.0.1 ads.g.doubleclick.net
+127.0.0.1 pagead.googlesyndication.com
+127.0.0.1 tpc.googlesyndication.com
+127.0.0.1 securepubads.g.doubleclick.net
+127.0.0.1 static.doubleclick.net
+127.0.0.1 googleads.g.doubleclick.net
+127.0.0.1 adclick.g.doubleclick.net
+127.0.0.1 www.googleadservices.com
+127.0.0.1 www.googlesyndication.com
+
+# YouTube Video Ad Domains
+127.0.0.1 r1---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r2---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r3---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r4---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r5---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r6---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r7---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r8---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r9---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r10---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r11---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r12---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r13---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r14---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r15---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r16---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r17---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r18---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r19---sn-4g5e6n7s.googlevideo.com
+127.0.0.1 r20---sn-4g5e6n7s.googlevideo.com
+
+# YouTube Music Ad Domains
+127.0.0.1 music.youtube.com
+127.0.0.1 ads.youtube.com
+127.0.0.1 adservice.google.com
+127.0.0.1 ads.g.doubleclick.net
+127.0.0.1 pagead.googlesyndication.com
+127.0.0.1 tpc.googlesyndication.com
+127.0.0.1 securepubads.g.doubleclick.net
+127.0.0.1 static.doubleclick.net
+127.0.0.1 googleads.g.doubleclick.net
+127.0.0.1 adclick.g.doubleclick.net
+
+# Additional Ad Networks
+127.0.0.1 adnxs.com
+127.0.0.1 adsystem.com
+127.0.0.1 adtechus.com
+127.0.0.1 advertising.com
+127.0.0.1 casalemedia.com
+127.0.0.1 criteo.com
+127.0.0.1 facebook.com
+127.0.0.1 go2cloud.org
+127.0.0.1 moatads.com
+127.0.0.1 outbrain.com
+127.0.0.1 pubmatic.com
+127.0.0.1 rubiconproject.com
+127.0.0.1 scorecardresearch.com
+127.0.0.1 taboola.com
+127.0.0.1 turn.com
+127.0.0.1 yahoo.com
+
+# Analytics and Tracking
+127.0.0.1 analytics.google.com
+127.0.0.1 analytics.youtube.com
+127.0.0.1 googletagmanager.com
+127.0.0.1 googletagservices.com
+127.0.0.1 google-analytics.com
+127.0.0.1 ssl.google-analytics.com
+127.0.0.1 www.google-analytics.com
+127.0.0.1 www.googletagmanager.com
+127.0.0.1 www.googletagservices.com
+
+# YouTube API Ad Endpoints
+127.0.0.1 www.youtube.com/api/stats/ads
+127.0.0.1 www.youtube.com/api/stats/atr
+127.0.0.1 www.youtube.com/api/stats/qoe
+127.0.0.1 www.youtube.com/api/stats/watchtime
+127.0.0.1 www.youtube.com/api/stats/ads
+127.0.0.1 www.youtube.com/api/stats/atr
+127.0.0.1 www.youtube.com/api/stats/qoe
+127.0.0.1 www.youtube.com/api/stats/watchtime

@@ -1,0 +1,49 @@
+# YouTube & YouTube Music AdBlock System Properties
+# These properties help modify app behavior and enhance ad blocking
+
+# Disable Google Play Services ads
+ro.config.media_vol_steps=25
+ro.config.media_vol_default=10
+
+# Disable YouTube ads
+persist.sys.media.vol.mute=1
+persist.sys.media.vol.steps=25
+
+# Block ad-related system properties
+ro.config.hw_quickpoweron=true
+ro.config.hw_fast_dormancy=true
+ro.config.hw_power_saving=true
+
+# Disable analytics and tracking
+ro.config.hw_optb=true
+ro.config.hw_quickpoweron=true
+ro.config.hw_fast_dormancy=true
+
+# YouTube specific properties
+youtube.adblock.enabled=1
+youtube.adblock.version=1.0.0
+youtube.adblock.hosts=1
+youtube.adblock.systemless=1
+
+# YouTube Music specific properties
+youtube.music.adblock.enabled=1
+youtube.music.adblock.version=1.0.0
+youtube.music.adblock.hosts=1
+youtube.music.adblock.systemless=1
+
+# Network ad blocking
+net.adblock.enabled=1
+net.adblock.hosts=1
+net.adblock.systemless=1
+
+# Disable ad-related services
+ro.config.hw_optb=true
+ro.config.hw_quickpoweron=true
+ro.config.hw_fast_dormancy=true
+ro.config.hw_power_saving=true
+
+# Enhanced privacy settings
+ro.config.hw_optb=true
+ro.config.hw_quickpoweron=true
+ro.config.hw_fast_dormancy=true
+ro.config.hw_power_saving=true

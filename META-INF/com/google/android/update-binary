@@ -1,0 +1,51 @@
+#!/sbin/sh
+TMPDIR=/dev/tmp
+MOUNTPATH=/dev/magisk_img
+
+# Default permissions
+umask 022
+
+# Initial cleanup
+rm -rf $TMPDIR 2>/dev/null
+mkdir -p $TMPDIR
+
+# echo before loading util_functions
+ui_print() { echo "$1"; }
+
+require_new_magisk() {
+  ui_print "*******************************"
+  ui_print " Please install Magisk v20.0+! "
+  ui_print "*******************************"
+  exit 1
+}
+
+OUTFD=$2
+ZIP=$3
+
+mount /data 2>/dev/null
+
+[ -f /data/adb/magisk/util_functions.sh ] || require_new_magisk
+. /data/adb/magisk/util_functions.sh
+[ $MAGISK_VER_CODE -lt 20000 ] && require_new_magisk
+
+install_module() {
+  rm -rf $MODPATH 2>/dev/null
+  mkdir -p $MODPATH
+
+  ui_print "- Extracting module files"
+  unzip -o "$ZIP" -x 'META-INF/*' -d $MODPATH >&2
+
+  # Set permissions
+  set_perm_recursive $MODPATH 0 0 0755 0644
+  set_perm $MODPATH/system/bin/youtube_adblock 0 0 0755
+  set_perm $MODPATH/system/etc/hosts 0 0 0644
+
+  # Create module directory
+  mkdir -p $MODPATH/system/etc
+  mkdir -p $MODPATH/system/bin
+
+  ui_print "- Module installed successfully"
+}
+
+# Install
+install_module
