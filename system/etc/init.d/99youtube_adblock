@@ -1,0 +1,20 @@
+#!/system/bin/sh
+# YouTube AdBlock Init Script
+
+# Wait for system to be ready
+sleep 10
+
+# Set up hosts file for ad blocking
+if [ -f /system/etc/hosts.youtube_adblock ]; then
+    cat /system/etc/hosts.youtube_adblock >> /system/etc/hosts
+fi
+
+# Enable ad blocking for YouTube
+setprop youtube.adblock.enabled true
+setprop youtube.music.adblock.enabled true
+
+# Restart network services to apply changes
+stop netd
+start netd
+
+exit 0

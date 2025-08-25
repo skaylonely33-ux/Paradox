@@ -1,0 +1,100 @@
+# YouTube AdBlock Hosts File
+# Block YouTube and YouTube Music ads
+
+# YouTube ad domains
+127.0.0.1 s.youtube.com
+127.0.0.1 www.youtube.com
+127.0.0.1 m.youtube.com
+127.0.0.1 youtube.com
+127.0.0.1 googlevideo.com
+127.0.0.1 *.googlevideo.com
+127.0.0.1 r*.googlevideo.com
+127.0.0.1 r1---*.googlevideo.com
+127.0.0.1 r2---*.googlevideo.com
+127.0.0.1 r3---*.googlevideo.com
+127.0.0.1 r4---*.googlevideo.com
+127.0.0.1 r5---*.googlevideo.com
+127.0.0.1 r6---*.googlevideo.com
+127.0.0.1 r7---*.googlevideo.com
+127.0.0.1 r8---*.googlevideo.com
+127.0.0.1 r9---*.googlevideo.com
+127.0.0.1 r10---*.googlevideo.com
+127.0.0.1 r11---*.googlevideo.com
+127.0.0.1 r12---*.googlevideo.com
+127.0.0.1 r13---*.googlevideo.com
+127.0.0.1 r14---*.googlevideo.com
+127.0.0.1 r15---*.googlevideo.com
+127.0.0.1 r16---*.googlevideo.com
+127.0.0.1 r17---*.googlevideo.com
+127.0.0.1 r18---*.googlevideo.com
+127.0.0.1 r19---*.googlevideo.com
+127.0.0.1 r20---*.googlevideo.com
+
+# YouTube Music ad domains
+127.0.0.1 music.youtube.com
+127.0.0.1 m.music.youtube.com
+
+# Google ad domains
+127.0.0.1 ads.google.com
+127.0.0.1 adservice.google.com
+127.0.0.1 adservice.google.co.id
+127.0.0.1 adservice.google.co.uk
+127.0.0.1 adservice.google.com.au
+127.0.0.1 adservice.google.com.br
+127.0.0.1 adservice.google.com.mx
+127.0.0.1 adservice.google.com.sg
+127.0.0.1 adservice.google.de
+127.0.0.1 adservice.google.fr
+127.0.0.1 adservice.google.it
+127.0.0.1 adservice.google.nl
+127.0.0.1 adservice.google.pl
+127.0.0.1 adservice.google.pt
+127.0.0.1 adservice.google.ru
+127.0.0.1 adservice.google.se
+127.0.0.1 adservice.google.tr
+127.0.0.1 adservice.google.vn
+
+# DoubleClick ad domains
+127.0.0.1 doubleclick.net
+127.0.0.1 *.doubleclick.net
+127.0.0.1 googlesyndication.com
+127.0.0.1 *.googlesyndication.com
+127.0.0.1 googleadservices.com
+127.0.0.1 *.googleadservices.com
+
+# YouTube analytics and tracking
+127.0.0.1 analytics.youtube.com
+127.0.0.1 s.youtube.com
+127.0.0.1 static.doubleclick.net
+127.0.0.1 www.googleadservices.com
+127.0.0.1 pagead2.googlesyndication.com
+127.0.0.1 video-stats.video.google.com
+127.0.0.1 ad.doubleclick.net
+127.0.0.1 www.youtube.com/pagead
+127.0.0.1 www.youtube.com/ptracking
+127.0.0.1 www.youtube.com/api/stats/ads
+127.0.0.1 www.youtube.com/api/stats/atr
+127.0.0.1 www.youtube.com/api/stats/qoe
+127.0.0.1 s.ytimg.com
+127.0.0.1 i.ytimg.com
+127.0.0.1 *.ytimg.com
+
+# Additional ad networks
+127.0.0.1 adsystem.google.com
+127.0.0.1 adservice.google.com
+127.0.0.1 adservice.google.co.id
+127.0.0.1 adservice.google.co.uk
+127.0.0.1 adservice.google.com.au
+127.0.0.1 adservice.google.com.br
+127.0.0.1 adservice.google.com.mx
+127.0.0.1 adservice.google.com.sg
+127.0.0.1 adservice.google.de
+127.0.0.1 adservice.google.fr
+127.0.0.1 adservice.google.it
+127.0.0.1 adservice.google.nl
+127.0.0.1 adservice.google.pl
+127.0.0.1 adservice.google.pt
+127.0.0.1 adservice.google.ru
+127.0.0.1 adservice.google.se
+127.0.0.1 adservice.google.tr
+127.0.0.1 adservice.google.vn
