@@ -49,6 +49,13 @@ install_module() {
   ui_print "- Setting up Xposed framework"
   # Copy Xposed framework files
   cp -r $MODPATH/xposed/* $MODPATH/system/ 2>/dev/null
+  
+  # Copy Xposed module files
+  mkdir -p $MODPATH/system/app/YouTubeAdBlock
+  cp $MODPATH/xposed_init $MODPATH/system/app/YouTubeAdBlock/ 2>/dev/null
+  cp $MODPATH/assets/xposed_init $MODPATH/system/app/YouTubeAdBlock/ 2>/dev/null
+  cp $MODPATH/AndroidManifest.xml $MODPATH/system/app/YouTubeAdBlock/ 2>/dev/null
+  cp -r $MODPATH/res $MODPATH/system/app/YouTubeAdBlock/ 2>/dev/null
 
   ui_print "- Installing ad blocking rules"
   # Copy hosts file for additional ad blocking

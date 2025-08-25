@@ -42,10 +42,16 @@ Modul Magisk untuk memblokir iklan dari aplikasi YouTube dan YouTube Music, miri
 1. Install LSPosed atau EdXposed
 2. Buka manager Xposed
 3. Pergi ke bagian "Modules"
-4. Aktifkan "YouTube AdBlock" untuk:
-   - YouTube (com.google.android.youtube)
-   - YouTube Music (com.google.android.apps.youtube.music)
-5. Reboot perangkat Anda
+4. Cari "YouTube AdBlock" dalam daftar modul
+5. Tap pada modul untuk membuka pengaturan
+6. Aktifkan modul dengan toggle switch
+7. Tap "Scope" untuk memilih aplikasi yang akan di-hook:
+   - ✅ YouTube (com.google.android.youtube)
+   - ✅ YouTube Music (com.google.android.apps.youtube.music)
+   - ✅ YouTube TV (com.google.android.youtube.tv) - opsional
+   - ✅ YouTube Kids (com.google.android.apps.youtube.kids) - opsional
+8. Tap "Save" untuk menyimpan pengaturan
+9. Reboot perangkat Anda
 
 ### Langkah 5: Verifikasi Instalasi
 1. Buka Terminal atau gunakan ADB
@@ -140,6 +146,18 @@ Modul memblokir berbagai domain terkait iklan termasuk:
 2. Verifikasi akses root berfungsi
 3. Pastikan Anda memiliki versi Magisk terbaru
 4. Periksa apakah perangkat Anda kompatibel
+
+### Modul Tidak Muncul di LSPosed
+1. Pastikan modul sudah terinstall dengan benar di Magisk Manager
+2. Reboot perangkat setelah instalasi modul
+3. Buka LSPosed Manager dan periksa bagian "Modules"
+4. Jika modul tidak muncul, coba:
+   - Uninstall modul dari Magisk Manager
+   - Reboot perangkat
+   - Install ulang modul
+   - Reboot lagi
+5. Pastikan LSPosed terinstall dengan benar
+6. Periksa apakah ada konflik dengan modul lain
 
 ### Masalah Performa
 1. Modul mungkin sedikit mempengaruhi waktu startup aplikasi
